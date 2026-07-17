@@ -270,6 +270,28 @@ h1 {
 
     100% {
         background-position: 100% center;
-    }
+        
+/* Efeito de sublinhar Categorias */
+        
+.categoria{
+    position: relative;
+}
 
+.categoria.ativa::after{
+    content: "";
+    position: absolute;
+    left: 28%;
+    bottom: 14px;
+
+    width: 44%;
+    height: 8px;
+
+    background: linear-gradient(90deg,#16d5ff,#ff2bb8);
+
+    border-radius: 100% 100% 100% 100%;
+    transform: skewX(-10deg);
+
+    opacity: .95;
+}
+        
 }
