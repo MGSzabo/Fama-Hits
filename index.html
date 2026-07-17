@@ -38,9 +38,9 @@
 
     <audio id="amorVazio" src="music/Amor Vazio.mp3"></audio>
 
-    <button class="ouvir" onclick="tocarMusica()">
-        ▶
-    </button>
+    <button class="ouvir" id="botaoPlay" onclick="tocarMusica()">
+    ▶
+</button>
 
     <a class="baixar" href="music/amor-vazio.mp3" download>
         ⬇ Baixar
@@ -93,14 +93,19 @@ function alternar(id){
     function tocarMusica(){
 
     let musica = document.getElementById("amorVazio");
+    let botao = document.getElementById("botaoPlay");
 
     if(musica.paused){
 
         musica.play();
 
+        botao.innerHTML = "⏸";
+
     }else{
 
         musica.pause();
+
+        botao.innerHTML = "▶";
 
     }
 
