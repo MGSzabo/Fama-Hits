@@ -73,11 +73,16 @@ main p{
 
     padding:15px;
 
+    width:100%
+
     border-bottom:1px solid #2a2a2a;
 
 }
 
-.nome-musica{
+.nome-musica {
+    flex: 1;
+   
+    margin-left: 15px;
 
     font-size:1.1rem;
 
@@ -86,16 +91,21 @@ main p{
 }
 
 .acoes{
-
-    display:flex;
-
-    gap:10px;
-
+    display: flex;
+   
+    align-items: center;
+    
+    gap: 15px;
 }
 
-.ouvir,
 .baixar{
-
+    
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
     border:none;
 
     border-radius:50px;
