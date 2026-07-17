@@ -1,1 +1,94 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fama Hits</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="images/header.png" alt="Fama Hits">
+</header>
+
+<main>
+
+    <h1>Fama Hits</h1>
+    <p>Ouça e baixe minhas músicas.</p>
+
+    <!-- GOSPEL -->
+
+    <button class="categoria" onclick="alternar('gospel')">
+        🎵 Gospel
+    </button>
+
+    <div id="gospel" class="lista">
+
+        <div class="musica">
+
+            <span class="nome-musica">
+                Amor ao Vazio
+            </span>
+
+            <div class="acoes">
+
+                <button class="ouvir">
+                    ▶
+                </button>
+
+                <button class="baixar">
+                    ⬇ Baixar
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MÚSICAS COM TEMA -->
+
+    <button class="categoria" onclick="alternar('tema')">
+        🎸 Músicas com Tema
+    </button>
+
+    <div id="tema" class="lista">
+
+        <div class="musica">
+
+            <span class="nome-musica">
+                (Em breve)
+            </span>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script>
+
+function alternar(id){
+
+    let lista = document.getElementById(id);
+
+    if(lista.style.display==="block"){
+
+        lista.style.display="none";
+
+    }else{
+
+        lista.style.display="block";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
