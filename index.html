@@ -1,159 +1,314 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fama Hits</title>
 
-    <link rel="stylesheet" href="style.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fama Hits</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+
 <header>
-    <img src="images/header.png" alt="Fama Hits">
+
+<img src="images/header.png" alt="Fama Hits">
+
 </header>
 
-    <button class="categoria sobre-btn" onclick="alternar('sobre', this)">
-    Sobre
+
+
+<button class="categoria sobre-btn" onclick="alternar('sobre', this)">
+Sobre
 </button>
+
+
 
 <div id="sobre" class="lista sobre-box">
 
-    <h2>Sobre o Fama Hits</h2>
+<h2>Sobre o Fama Hits</h2>
 
-    <p>
-        O Fama Hits é um espaço dedicado à criação e divulgação de músicas autorais,
-        reunindo diferentes estilos e propostas musicais.
-    </p>
+<p>
+O Fama Hits é um espaço dedicado à criação e divulgação de músicas autorais,
+reunindo diferentes estilos e propostas musicais.
+</p>
 
-    <p>
-        O projeto busca apresentar músicas criadas com criatividade, emoção e novas
-        possibilidades de produção, trazendo canções com identidades próprias e
-        experiências musicais que fogem do comum.
-    </p>
+<p>
+O projeto busca apresentar músicas criadas com criatividade, emoção e novas
+possibilidades de produção, trazendo canções com identidades próprias.
+</p>
 
-    <p>
-        Cada música nasce de um processo criativo conduzido pelo autor, desde a ideia
-        inicial, conceito, desenvolvimento das letras e direção artística.
-        Ferramentas digitais são utilizadas como apoio na criação de vozes,
-        sonoridades e produção musical.
-    </p>
+<p>
+Cada música nasce de um processo criativo conduzido pelo autor, desde a ideia
+inicial, conceito, desenvolvimento das letras e direção artística.
+</p>
 
 </div>
+
+
+
 
 <main>
 
-    <h1>Fama Hits</h1>
-    <p>Ouça e baixe minhas músicas.</p>
 
-    <!-- GOSPEL -->
+<h1>Fama Hits</h1>
 
-    <button class="categoria" onclick="alternar('gospel', this)">
-    <img src="images/nota.png" class="icone-estilo">
-    Gospel
+<p>Ouça e baixe minhas músicas.</p>
+
+
+
+
+<!-- GOSPEL -->
+
+<button class="categoria" onclick="alternar('gospel', this)">
+
+<img src="images/nota.png" class="icone-estilo">
+
+Gospel
+
 </button>
 
-    <div id="gospel" class="lista">
 
-    <div class="musica">
 
-        <button id="playBtn" onclick="tocarMusica()">
-    <img id="playIcon" src="images/play.png" alt="Play">
+<div id="gospel" class="lista">
 
-        </button>
 
-        <span class="nome-musica">
-            Amor Vazio
-        </span>
 
-        <a class="baixar" href="music/Amor Vazio.mp3" download>
-            ⬇ Baixar
-        </a>
+<div class="musica">
 
-    </div>
 
-    <audio id="amorVazio" src="music/Amor Vazio.mp3"></audio>
+<button class="playBtn" onclick="tocarMusica('amorVazio', this)">
+
+<img src="images/play.png" alt="Play">
+
+</button>
+
+
+
+<span class="nome-musica">
+
+Amor Vazio
+
+</span>
+
+
+
+<a class="baixar" href="music/Amor Vazio.mp3" download>
+
+⬇ Baixar
+
+</a>
+
+
+
+<audio id="amorVazio">
+
+<source src="music/Amor Vazio.mp3">
+
+</audio>
+
+
 
 </div>
 
-    <!-- MÚSICAS COM ÓTICA DIFERENCIADA -->
 
-    <button class="categoria" onclick="alternar('tema', this)">
-    <img src="images/caixa.png" class="icone-estilo">
-    Fora da Caixa
+
+</div>
+
+    <!-- FORA DA CAIXA -->
+
+<button class="categoria" onclick="alternar('tema', this)">
+
+<img src="images/caixa.png" class="icone-estilo">
+
+Fora da Caixa
+
 </button>
 
-    <div id="tema" class="lista">
 
-        <div class="musica">
 
-            <button id="playBtn" onclick="tocarMusica()">
-    <img id="playIcon" src="images/play.png" alt="Play">
+<div id="tema" class="lista">
 
-        </button>
+
+
+<div class="musica">
+
+
+
+<button class="playBtn" onclick="tocarMusica('foraDeControle', this)">
+
+<img src="images/play.png" alt="Play">
+
+</button>
+
+
 
 <span class="nome-musica">
-     Fora de Controle 
+
+Fora de Controle
+
 </span>
 
-            <a class="baixar" href="music/Fora de Controle.mp3" download>
-            ⬇ Baixar
-        </a>
 
-        </div>
-        
-<audio id="foradecontrole" src="music/Fora de Controle.mp3"></audio>
 
-    </div>
+<a class="baixar" href="music/Fora de Controle.mp3" download>
+
+⬇ Baixar
+
+</a>
+
+
+
+<audio id="foraDeControle">
+
+<source src="music/Fora de Controle.mp3">
+
+</audio>
+
+
+
+</div>
+
+
+
+</div>
+
+
 
 </main>
 
+
+
+
 <script>
+
 
 function alternar(id, botao){
 
-    let lista = document.getElementById(id);
 
-    document.querySelectorAll(".categoria")
-    .forEach(b => b.classList.remove("ativa"));
-
-    botao.classList.add("ativa");
+let lista = document.getElementById(id);
 
 
-    if(lista.style.display==="block"){
 
-        lista.style.display="none";
+document.querySelectorAll(".categoria")
 
-    }else{
+.forEach(b => b.classList.remove("ativa"));
 
-        lista.style.display="block";
 
-    }
+
+botao.classList.add("ativa");
+
+
+
+if(lista.style.display === "block"){
+
+lista.style.display = "none";
+
+}else{
+
+lista.style.display = "block";
+
+}
+
 
 }
 
-    function tocarMusica(){
 
-    let musica = document.getElementById("amorVazio");
-    let playIcon = document.getElementById("playIcon");
 
-    if(musica.paused){
 
-        musica.play();
-        playIcon.src = "images/pause.png";
 
-    }else{
+function tocarMusica(id, botao){
 
-        musica.pause();
-        playIcon.src = "images/play.png";
 
-    }
+let musica = document.getElementById(id);
+
+let icone = botao.querySelector("img");
+
+
+
+// pausa todas as outras músicas
+
+document.querySelectorAll("audio").forEach(audio => {
+
+
+if(audio !== musica){
+
+audio.pause();
+
 
 }
-    
+
+
+});
+
+
+
+// volta todos os ícones para play
+
+document.querySelectorAll(".playBtn img").forEach(img => {
+
+img.src = "images/play.png";
+
+});
+
+
+
+
+
+if(musica.paused){
+
+
+musica.play();
+
+icone.src = "images/pause.png";
+
+
+}else{
+
+
+musica.pause();
+
+icone.src = "images/play.png";
+
+
+}
+
+
+
+}
+
+
+
+// quando a música termina,
+// volta o botão para play
+
+document.querySelectorAll("audio").forEach(audio => {
+
+
+audio.addEventListener("ended", function(){
+
+
+document.querySelectorAll(".playBtn img").forEach(img => {
+
+img.src = "images/play.png";
+
+});
+
+
+});
+
+
+});
+
+
 </script>
 
+
+
 </body>
+
 </html>
