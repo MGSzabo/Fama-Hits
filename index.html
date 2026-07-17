@@ -78,7 +78,7 @@
 
 </div>
 
-    <!-- MÚSICAS COM TEMA -->
+    <!-- MÚSICAS COM ÓTICA DIFERENCIADA -->
 
     <button class="categoria" onclick="alternar('tema', this)">
     <img src="images/caixa.png" class="icone-estilo">
@@ -89,11 +89,25 @@
 
         <div class="musica">
 
-            <span class="nome-musica">
-                (Em breve)
+            <button id="playBtn" onclick="tocarMusica()">
+    <img id="playIcon" src="images/play.png" alt="Play">
+
+        </button>
+
+<span class="nome-musica">
+     ( Mais em breve)
+            </span>
+<span class="nome-musica">
+            Fora do Controle
             </span>
 
+            <a class="baixar" href="music/Amor Vazio.mp3" download>
+            ⬇ Baixar
+        </a>
+
         </div>
+        
+<audio id="ForadeControle" src="music/Fora de Controle.mp3"></audio>
 
     </div>
 
