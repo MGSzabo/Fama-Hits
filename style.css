@@ -203,4 +203,22 @@ main p{
 
 }
 
+/* ==========================
+          ÁREA ICONES
+   ========================== */
+
+.icone-estilo{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+    vertical-align:middle;
+    margin-right:8px;
+}
+
+.icone-play{
+    width:48px;
+    height:48px;
+    object-fit:contain;
+}
+
 }
