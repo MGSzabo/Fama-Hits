@@ -284,7 +284,7 @@ h1 {
     content: "";
     position: absolute;
     left: 28%;
-    bottom: 14px;
+    bottom: -8px;
 
     width: 44%;
     height: 8px;
