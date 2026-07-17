@@ -205,11 +205,11 @@ main p{
 
 /* ==========================
    ÍCONES DE CATEGORIA
-==========================
+==========================}*/
 
 .icone-estilo{
-    width:40px;
-    height:40px;
+    width:55px;
+    height:55px;
     object-fit:contain;
     vertical-align:middle;
     margin-right:8px;
@@ -219,6 +219,5 @@ main p{
     width:48px;
     height:48px;
     object-fit:contain;
-}*/
 
 }
