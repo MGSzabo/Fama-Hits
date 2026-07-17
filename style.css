@@ -73,7 +73,7 @@ main p{
 
     padding:15px;
 
-    width:100%
+    width:100%;
 
     border-bottom:1px solid #2a2a2a;
 
@@ -114,6 +114,13 @@ main p{
 
     color:white;
 
+    padding:0 18px;
+
+    height:48px;
+
+    font-weight:bold;
+
+
     background:linear-gradient(90deg,#00d8ff,#ff2fa5);
 
 }
@@ -129,15 +136,14 @@ main p{
     align-items:center;
     justify-content:center;
 
-}
+    border:none;
+    border-radius:50%;
 
-.baixar{
+    cursor:pointer;
 
-    padding:0 18px;
+    color:white;
 
-    height:48px;
-
-    font-weight:bold;
+    background:linear-gradient(90deg,#00d8ff,#ff2fa5);
 
 }
 
