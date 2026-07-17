@@ -156,3 +156,51 @@ main p{
     transition:.25s;
 
 }
+
+    /* ==========================
+   ÁREA SOBRE O FAMA HITS
+   ========================== */
+
+.sobre-box{
+
+    background:rgba(255,255,255,0.05);
+
+    border:2px solid transparent;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    margin-top:15px;
+
+    margin-bottom:35px;
+
+    backdrop-filter:blur(8px);
+
+    border-image:linear-gradient(90deg,#00d8ff,#ff2fa5) 1;
+
+}
+
+.sobre-box h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:white;
+
+}
+
+.sobre-box p{
+
+    text-align:left;
+
+    color:#cfcfcf;
+
+    line-height:1.6;
+
+    margin-bottom:15px;
+
+}
+
+}
