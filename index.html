@@ -31,20 +31,22 @@
         <div class="musica">
 
             <span class="nome-musica">
-                Amor ao Vazio
-            </span>
+    Amor Vazio
+</span>
 
-            <div class="acoes">
+<div class="acoes">
 
-                <button class="ouvir">
-                    ▶
-                </button>
+    <audio id="amorVazio" src="music/amor-vazio.mp3"></audio>
 
-                <button class="baixar">
-                    ⬇ Baixar
-                </button>
+    <button class="ouvir" onclick="tocarMusica()">
+        ▶
+    </button>
 
-            </div>
+    <a class="baixar" href="music/amor-vazio.mp3" download>
+        ⬇ Baixar
+    </a>
+
+</div>
 
         </div>
 
@@ -88,6 +90,22 @@ function alternar(id){
 
 }
 
+    function tocarMusica(){
+
+    let musica = document.getElementById("amorVazio");
+
+    if(musica.paused){
+
+        musica.play();
+
+    }else{
+
+        musica.pause();
+
+    }
+
+}
+    
 </script>
 
 </body>
