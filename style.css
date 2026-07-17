@@ -283,18 +283,18 @@ h1 {
 .categoria.ativa::after{
     content: "";
     position: absolute;
-    left: 28%;
+    left: 25%;
     bottom: -8px;
 
-    width: 44%;
-    height: 8px;
+    width: 50%;
+    height: 10px;
 
     background: linear-gradient(90deg,#16d5ff,#ff2bb8);
 
-    border-radius: 100% 100% 100% 100%;
-    transform: skewX(-10deg);
+    border-radius: 50%;
+    transform: skewX(-15deg);
 
-    opacity: .95;
+    opacity:1;
 }
         
 }
