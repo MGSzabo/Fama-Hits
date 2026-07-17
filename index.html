@@ -15,7 +15,7 @@
     <img src="images/header.png" alt="Fama Hits">
 </header>
 
-    <button class="categoria sobre-btn" onclick="alternar('sobre')">
+    <button class="categoria sobre-btn" onclick="alternar('sobre', this)">
     Sobre
 </button>
 
@@ -50,10 +50,10 @@
 
     <!-- GOSPEL -->
 
-    <button class="categoria" onclick="alternar('gospel')">
-        <img src="images/nota.png" class="icone-estilo">
-Gospel
-    </button>
+    <button class="categoria" onclick="alternar('gospel', this)">
+    <img src="images/nota.png" class="icone-estilo">
+    Gospel
+</button>
 
     <div id="gospel" class="lista">
 
@@ -80,10 +80,10 @@ Gospel
 
     <!-- MÚSICAS COM TEMA -->
 
-    <button class="categoria" onclick="alternar('tema')">
-        <img src="images/caixa.png" class="icone-estilo">
-Fora da Caixa
-    </button>
+    <button class="categoria" onclick="alternar('tema', this)">
+    <img src="images/caixa.png" class="icone-estilo">
+    Fora da Caixa
+</button>
 
     <div id="tema" class="lista">
 
@@ -101,9 +101,15 @@ Fora da Caixa
 
 <script>
 
-function alternar(id){
+function alternar(id, botao){
 
     let lista = document.getElementById(id);
+
+    document.querySelectorAll(".categoria")
+    .forEach(b => b.classList.remove("ativa"));
+
+    botao.classList.add("ativa");
+
 
     if(lista.style.display==="block"){
 
