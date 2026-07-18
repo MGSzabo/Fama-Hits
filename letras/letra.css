@@ -8,9 +8,10 @@
 
 body{
 
-    background-image:url("../images/carta.png");
+    
+ background-image:url("/Fama-Hits/images/carta.png");
 
-    background-size:cover;
+  background-size:cover;
 
     background-position:center;
 
