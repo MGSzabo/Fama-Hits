@@ -204,6 +204,34 @@ main p{
 }
 
 /* ==========================
+         APOIA SE
+========================== */
+
+.apoie-btn{
+
+    display:block;
+
+    width:100%;
+
+    padding:18px;
+
+    margin-bottom:15px;
+
+    text-align:center;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:linear-gradient(90deg,#00d8ff,#ff2fa5);
+
+}
+
+/* ==========================
    ÍCONES DE CATEGORIA
 ========================== */
 
