@@ -366,3 +366,26 @@ h1 {
     object-fit:contain;
 
 }
+
+
+/* ==========================
+   TIKTOK
+========================== */
+
+.tiktok-box{
+    text-align:center;
+    margin-top:25px;
+}
+
+.tiktok-box a{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    text-decoration:none;
+}
+
+.tiktok-box img{
+    width:35px;
+    height:35px;
+}
