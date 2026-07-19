@@ -378,14 +378,36 @@ h1 {
 }
 
 .tiktok-box a{
+
     display:inline-flex;
+
     align-items:center;
+
+    justify-content:center;
+
     gap:10px;
+
     color:white;
+
     text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:bold;
+
 }
 
+
 .tiktok-box img{
+
     width:35px;
+
     height:35px;
+
+    object-fit:contain;
+
+    display:block;
+
+    background:transparent;
+
 }
